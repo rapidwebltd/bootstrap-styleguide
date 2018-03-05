@@ -14,9 +14,9 @@
       <h1>Bootstrap 4 Styleguide</h1>
       <p>This is a style guide showcasing Bootstrap 4 and common HTML elements, which are displayed all on a single page. <br>It is a modified version of the <a href="https://getbootstrap.com/docs/3.3/examples/theme/">Bootstrap 3 Theme</a> example.</p>
     </div>
-    <div class="page-header">
-      <h1>Palette</h1>
-    </div>
+
+    <h1>Palette</h1>
+
     <div class="row">
       <div class="col-sm">
         <div class="card mb-3">
@@ -120,9 +120,7 @@
       </div>
     </div>
 
-    <div class="page-header">
-      <h1>Headings &amp; Body Text</h1>
-    </div>
+    <h1>Headings &amp; Body Text</h1>
 
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -132,9 +130,8 @@
     <h6>Heading 6</h6>
     <p>Lorem ipsum Nostrud Duis minim Ut id incididunt deserunt consequat id irure <a href="#">nostrud voluptate</a> aliquip Ut eu aliqua eu sed anim aute laborum est officia consectetur irure aliquip ex veniam laboris cillum Duis occaecat fugiat adipisicing ex in dolore ullamco ad ullamco velit nisi irure ad tempor minim fugiat fugiat aute Excepteur in id culpa id velit proident commodo enim cillum Ut quis dolor cillum enim ullamco est in eu laboris Ut Excepteur nisi aliquip occaecat deserunt incididunt eiusmod aute Excepteur Excepteur non ut ut fugiat nostrud laboris dolore Excepteur id qui eiusmod esse mollit fugiat eiusmod dolore quis quis aliquip reprehenderit sint commodo dolore proident officia Duis eiusmod esse cupidatat id consequat aliqua Excepteur dolore tempor consequat laboris dolore sit aliqua eu sed dolore laboris ad tempor et in incididunt dolore dolor irure anim adipisicing cillum dolor in laborum laboris veniam voluptate Ut irure ad dolor irure in ex sint dolor deserunt ut adipisicing est pariatur Excepteur dolore ullamco pariatur in non Excepteur mollit consequat laborum ullamco reprehenderit ea id ut anim ex consectetur occaecat.</p>  
 
-    <div class="page-header">
-      <h1>Buttons</h1>
-    </div>
+    <h1>Buttons</h1>
+
     <p>
       <button type="button" class="btn btn-primary btn-lg">Primary</button>
       <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
@@ -176,10 +173,8 @@
       <button type="button" class="btn btn-outline-dark">Dark</button>
     </p>
 
+    <h1>Tables</h1>
 
-    <div class="page-header">
-      <h1>Tables</h1>
-    </div>
     <div class="row">
       <div class="col-md">
         <table class="table">
@@ -317,23 +312,22 @@
     </div>
   </div>
 
-  <div class="page-header">
-    <h1>Thumbnails</h1>
-  </div>
+  <h1>Thumbnails</h1>
+
   <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
 
-  <div class="page-header">
-    <h1>Badges</h1>
-  </div>
+  <h1>Badges</h1>
+
   <p>
     <a href="#">Inbox <span class="badge badge-secondary">42</span></a>
   </p>
+
   <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link active" href="#">Active</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link <span class="badge badge-primary">42</span></a>
+      <a class="nav-link" href="#">Link <span class="badge badge-secondary">42</span></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
@@ -343,38 +337,74 @@
     </li>
   </ul>
 
+  <h1>Dropdown</h1>
 
-  <div class="page-header">
-    <h1>Dropdown menus</h1>
+  <!-- Large button groups (default and split) -->
+  <div class="btn-group">
+    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Large button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
   </div>
-  <div class="dropdown theme-dropdown clearfix">
-    <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-      <li class="active"><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
-      <li role="separator" class="divider"></li>
-      <li><a href="#">Separated link</a></li>
-    </ul>
+  <div class="btn-group">
+    <button class="btn btn-secondary btn-lg" type="button">
+      Large split button
+    </button>
+    <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
   </div>
 
-
-  <div class="page-header">
-    <h1>Navs</h1>
+  <!-- Small button groups (default and split) -->
+  <div class="btn-group">
+    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Small button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
   </div>
-  <ul class="nav nav-tabs">
+  <div class="btn-group">
+    <button class="btn btn-secondary btn-sm" type="button">
+      Small split button
+    </button>
+    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+
+  <h1>Navs</h1>
+
+  <ul class="nav nav-tabs mb-3">
     <li class="nav-item">
       <a class="nav-link active" href="#">Active</a>
     </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
@@ -383,19 +413,13 @@
       <a class="nav-link disabled" href="#">Disabled</a>
     </li>
   </ul>
+
   <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link active" href="#">Active</a>
     </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
@@ -405,10 +429,7 @@
     </li>
   </ul>
 
-
-  <div class="page-header">
-    <h1>Navbars</h1>
-  </div>
+  <h1>Navbars</h1>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -460,10 +481,8 @@
     </div>
   </nav>
 
+  <h1>Alerts</h1>
 
-  <div class="page-header">
-    <h1>Alerts</h1>
-  </div>
   <div class="alert alert-success" role="alert">
     <strong>Well done!</strong> You successfully read this important alert message.
   </div>
@@ -477,10 +496,8 @@
     <strong>Oh snap!</strong> Change a few things up and try submitting again.
   </div>
 
+  <h1>Progress bars</h1>
 
-  <div class="page-header">
-    <h1>Progress bars</h1>
-  </div>
   <div class="progress mb-3">
     <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
   </div>
@@ -505,53 +522,76 @@
     <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
 
+  <h1>List groups</h1>
 
-  <div class="page-header">
-    <h1>List groups</h1>
-  </div>
   <div class="row">
     <div class="col-md">
-      <ul class="list-group">
-        <li class="list-group-item">Cras justo odio</li>
+      <ul class="list-group mb-3">
+        <li class="list-group-item active">Cras justo odio</li>
         <li class="list-group-item">Dapibus ac facilisis in</li>
         <li class="list-group-item">Morbi leo risus</li>
         <li class="list-group-item">Porta ac consectetur ac</li>
         <li class="list-group-item">Vestibulum at eros</li>
       </ul>
-    </div><!-- /.col-md -->
-    <div class="col-md">
-      <div class="list-group">
-        <a href="#" class="list-group-item active">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
           Cras justo odio
-        </a>
-        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-        <a href="#" class="list-group-item">Morbi leo risus</a>
-        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-        <a href="#" class="list-group-item">Vestibulum at eros</a>
-      </div>
+          <span class="badge badge-primary badge-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Dapibus ac facilisis in
+          <span class="badge badge-primary badge-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Morbi leo risus
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+      </ul>
+    </div><!-- /.col-md -->
+    <div class="col-md">
+      <ul class="list-group">
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+        <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+        <li class="list-group-item list-group-item-success">This is a success list group item</li>
+        <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+        <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+        <li class="list-group-item list-group-item-info">This is a info list group item</li>
+        <li class="list-group-item list-group-item-light">This is a light list group item</li>
+        <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+      </ul>
     </div><!-- /.col-md -->
     <div class="col-md">
       <div class="list-group">
-        <a href="#" class="list-group-item active">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small>Donec id elit non mi porta.</small>
         </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
         </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          <small class="text-muted">Donec id elit non mi porta.</small>
         </a>
       </div>
     </div><!-- /.col-md -->
   </div>
 
-
-  <div class="page-header">
-    <h1>Cards <small class="text-muted">Replacing panels, wells and thumbnails</small></h1>
-  </div>
+  <h1>Cards <small class="text-muted">Replacing panels, wells and thumbnails</small></h1>
 
   <div class="row">
     <div class="col-sm">
@@ -631,9 +671,7 @@
     </div>
   </div>
 
-  <div class="page-header">
-    <h1>Carousel</h1>
-  </div>
+  <h1>Carousel</h1>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
