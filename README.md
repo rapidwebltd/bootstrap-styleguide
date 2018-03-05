@@ -4,9 +4,5 @@ This is a style guide showcasing Bootstrap and common HTML elements, which are d
 ## Demo
 You can view the styleguide [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/rapidwebltd/bootstrap-styleguide/master/styleguide.html).
 
-## Looking for Bootstrap v4 Styleguide?
-
-We're not quite ready yet, but you can take a sneaky preview at our `v4-beta` branch for a Bootstrap 4 Styleguide.
-
 ## License
 MIT
